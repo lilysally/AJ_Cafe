@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>AJ CAFE</title>
+  <link rel="stylesheet" href="css/font_famil.css">
+  <style>
+  .title{
+    color:#FA8072;
+   }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">AJ CAFE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">   <!--項目當作功能選單 ml-auto==margin-left:auto-->
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item "> <!--active==checked-->
+          <a class="nav-link" href="about.html">關於我們</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="call.html">聯絡我們</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">產品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recommend.html">店家推薦</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row text-center mb-5">
+  
+    <div id="carouselExampleFade" class="carousel slide carousel-fade col-sm-12 col-lg-12" data-ride="carousel">
+     <div class="carousel-inner">
+      <div class="carousel-item active mt-0">
+        <img src="images/inner.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item mt-0">
+        <img src="images/inner-exit.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+   </div>
+ 
+  </div>
+
+  <div class="container mt-3 text-center">
+    <div class="row no-gutters"> 
+      <div class="col-sm-6 col-lg-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2243097163832!2d120.43427761342237!3d23.703682513641443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eb0aaafb87005%3A0xde4b448d5b8f79c9!2sAJ+CAFE!5e0!3m2!1szh-TW!2stw!4v1559829904048!5m2!1szh-TW!2stw" width="500" height="450" frameborder="0" style="border:0" allowfullscreen class="mt-3 mb-3"></iframe></div>
+      <div class="col-sm-6 col-lg-6 text-center align-self-center ">
+        <h3 class="title my-3">店家資訊<small>About Us</small></h3><br>
+        <p>營業時間 : 週一~週日 : 10:00am ~ 6:30pm<br>
+          公休日 : 週四<br>
+          電話:05-6365258<span><a href="https://www.facebook.com/groups/371555986209450/" target="_blank"><img src="images/FB.png" alt=""></a></span><br>
+        地址:雲林縣虎尾鎮民主路18-7號</p>
+      </div>
+    </div>
+ </div>
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+ <footer class="bg-dark text-white text-center py-2 mt-5">
+    Copyrights © 2019 All Rights Reserved by AJ CAFE
+  </footer>
+  <!--<div style="height:2000px;"></div>--> <!--出現捲軸-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/back_to_top_scroll.js"></script>
+</body>
+</html>

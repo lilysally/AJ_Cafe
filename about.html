@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>AJ CAFE</title>
+  <link rel="stylesheet" href="css/font_famil.css">
+  <style>
+  .carousel-item{
+
+    background-position: center center; 
+    margin-top:3.5rem; 
+
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">AJ CAFE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-fixed-top" id="navbarNav">
+      <ul class="navbar-nav ml-auto">   <!--項目當作功能選單 ml-auto==margin-left:auto-->
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">關於我們</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="call.html">聯絡我們</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">產品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recommend.html">店家推薦</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="card" style="width: 40rem;margin: 0 auto">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1559827699330!6m8!1m7!1sCAoSLEFGMVFpcE5KWDlOYzRNQ2Z0dmFyVW9ZQ0FCS2pXMEhJN1c5eTE0MUZCOUVR!2m2!1d23.70375127963994!2d120.4348247840614!3f285.00728502650946!4f-56.21769922194882!5f0.4000000000000002" width="600px" height="450px" class="ml-auto mr-auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="card-body">
+          <h1 class="card-title text-center">AJ CAFE</h1>
+          <p class="card-text text-center">
+            以創立人(老闆Allen，老闆娘Joyce)的英文名字開頭A和J，加上主要是販售咖啡，所以合在一起變 AJ  CAFE，而開這間店的原因是老闆之前在虎科讀書時，發現很少有可以讀書的空間，所以結合自己喜歡咖啡以及對咖啡有一點熟練的因素來開店。目前開店時間為7年多，當中有畢業的學生回來虎尾享用AJ CAFE，找尋屬於在這裡的回憶及一份歸屬感，回憶是在這裡除了享用咖啡及甜點外，也看了各式各樣的雜誌，動腦玩益智遊戲，歸屬感則是因為聚集在這的是虎科的學弟、妹，彷彿自己還在虎科讀書。<br>
+            <h3 class="text-center">店家特色:</h3>
+            <p class="text-center">雜誌，海賊王拼圖，益智遊戲，咖啡器材</p><br>
+          </p>
+          <div id="feature0"></div>
+          <div id="feature1"></div>
+          <div id="feature2"></div>
+          <div id="feature3"></div>
+          <div class="text-center">
+            <a href="##" class="btn btn-primary" onclick="more();">特色詳細內容</a>
+          </div>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+    </div> 
+  </div>
+  
+  <!--<div style="height:2000px;"></div>--> <!--出現捲軸-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/back_to_top_scroll.js"></script>
+  <script src="js/feature_for_details.js"></script>
+</body>
+</html>
